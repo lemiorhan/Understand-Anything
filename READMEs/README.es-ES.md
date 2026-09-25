@@ -125,7 +125,7 @@ Un pipeline multi-agente escanea tu proyecto, extrae cada archivo, función, cla
 # Genera contenido en el idioma preferido (descripciones de nodos y UI del dashboard)
 /understand --language en
 
-# Idiomas soportados: en (default), zh, zh-TW, ja, ko, ru
+# Idiomas soportados: en (default), zh, zh-TW, ja, ko, ru, tr
 ```
 
 El parámetro `--language` afecta:

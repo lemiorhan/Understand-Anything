@@ -123,10 +123,10 @@ Alan görünümüne geçin ve kodunuzun gerçek iş süreçleriyle nasıl eşle�
 **Yerelleştirilmiş çıktı:** İstediğiniz dilde içerik oluşturmak için `--language` kullanın:
 
 ```bash
-# İstediğiniz dilde içerik oluştur (düğüm açıklamaları ve dashboard UI)
-/understand --language en
+# Türkçe içerik oluştur (düğüm açıklamaları ve dashboard UI)
+/understand --language tr
 
-# Desteklenen diller: en (varsayılan), zh, zh-TW, ja, ko, ru
+# Desteklenen diller: en (varsayılan), zh, zh-TW, ja, ko, ru, tr
 ```
 
 `--language` parametresi şunları etkiler:
