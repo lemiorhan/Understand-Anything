@@ -286,10 +286,12 @@ The graph is just JSON — **commit it once, and teammates skip the pipeline**. 
 
 > **Example:** [GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo) — Go / Java / Python / Node reference with a committed graph.
 
-**What to commit:** everything in `.ua/` *except* `intermediate/` and `diff-overlay.json` (those are local scratch). (Legacy projects use `.understand-anything/` — substitute that directory name below if it's the one present.)
+**What to commit:** everything in `.ua/` *except* `intermediate/`, `tmp/`, `.trash-*/` and `diff-overlay.json` (those are local scratch). (Legacy projects use `.understand-anything/` — substitute that directory name below if it's the one present.)
 
 ```gitignore
 .ua/intermediate/
+.ua/tmp/
+.ua/.trash-*/
 .ua/diff-overlay.json
 ```
 

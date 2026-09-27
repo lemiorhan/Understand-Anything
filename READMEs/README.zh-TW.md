@@ -266,10 +266,12 @@ curl -fsSL https://raw.githubusercontent.com/Egonex-AI/Understand-Anything/main/
 
 > **範例：** [GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo) —— 包含已提交圖譜的 Go / Java / Python / Node 多語言參考專案。
 
-**需要提交的內容：** `.ua/` 底下的全部檔案，*除了* `intermediate/` 與 `diff-overlay.json`（這些是本機暫存檔）。（舊專案使用 `.understand-anything/`——如果存在的是該目錄，請將下方的目錄名稱替換為它。）
+**需要提交的內容：** `.ua/` 底下的全部檔案，*除了* `intermediate/`、`tmp/`、`.trash-*/` 與 `diff-overlay.json`（這些是本機暫存檔）。（舊專案使用 `.understand-anything/`——如果存在的是該目錄，請將下方的目錄名稱替換為它。）
 
 ```gitignore
 .ua/intermediate/
+.ua/tmp/
+.ua/.trash-*/
 .ua/diff-overlay.json
 ```
 

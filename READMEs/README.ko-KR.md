@@ -266,10 +266,12 @@ curl -fsSL https://raw.githubusercontent.com/Egonex-AI/Understand-Anything/main/
 
 > **예시:** [GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo) — 커밋된 그래프를 포함한 Go / Java / Python / Node 레퍼런스 프로젝트.
 
-**커밋할 대상:** `.ua/` 내부의 모든 파일. 단, `intermediate/` 와 `diff-overlay.json` 은 제외합니다 (이들은 로컬 임시 파일입니다). (레거시 프로젝트는 `.understand-anything/` 를 사용합니다. 해당 디렉터리가 있는 경우 아래의 디렉터리 이름을 그것으로 바꾸세요.)
+**커밋할 대상:** `.ua/` 내부의 모든 파일. 단, `intermediate/`, `tmp/`, `.trash-*/` 와 `diff-overlay.json` 은 제외합니다 (이들은 로컬 임시 파일입니다). (레거시 프로젝트는 `.understand-anything/` 를 사용합니다. 해당 디렉터리가 있는 경우 아래의 디렉터리 이름을 그것으로 바꾸세요.)
 
 ```gitignore
 .ua/intermediate/
+.ua/tmp/
+.ua/.trash-*/
 .ua/diff-overlay.json
 ```
 

@@ -267,10 +267,12 @@ curl -fsSL https://raw.githubusercontent.com/Egonex-AI/Understand-Anything/main/
 
 > **Пример:** [GoogleCloudPlatform/microservices-demo (форк)](https://github.com/GoogleCloudPlatform/microservices-demo) — мультиязыковой проект (Go / Java / Python / Node) с уже зафиксированным графом.
 
-**Что коммитить:** всё содержимое `.ua/`, *кроме* `intermediate/` и `diff-overlay.json` (это локальные временные файлы). (Устаревшие проекты используют `.understand-anything/` — подставьте это имя каталога ниже, если присутствует именно он.)
+**Что коммитить:** всё содержимое `.ua/`, *кроме* `intermediate/`, `tmp/`, `.trash-*/` и `diff-overlay.json` (это локальные временные файлы). (Устаревшие проекты используют `.understand-anything/` — подставьте это имя каталога ниже, если присутствует именно он.)
 
 ```gitignore
 .ua/intermediate/
+.ua/tmp/
+.ua/.trash-*/
 .ua/diff-overlay.json
 ```
 

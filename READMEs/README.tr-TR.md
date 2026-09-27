@@ -267,10 +267,12 @@ Graf yalnızca bir JSON dosyasıdır — **bir kez commit'leyin, ekip arkadaşla
 
 > **Örnek:** [GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo) — commit'lenmiş grafı içeren Go / Java / Python / Node çok dilli referans projesi.
 
-**Neyi commit'leyin:** `.ua/` içindeki her şey, *ancak* `intermediate/` ve `diff-overlay.json` hariç (bunlar yerel geçici dosyalardır). (Eski projeler `.understand-anything/` kullanır — mevcut olan buysa aşağıdaki dizin adını onunla değiştirin.)
+**Neyi commit'leyin:** `.ua/` içindeki her şey, *ancak* `intermediate/`, `tmp/`, `.trash-*/` ve `diff-overlay.json` hariç (bunlar yerel geçici dosyalardır). (Eski projeler `.understand-anything/` kullanır — mevcut olan buysa aşağıdaki dizin adını onunla değiştirin.)
 
 ```gitignore
 .ua/intermediate/
+.ua/tmp/
+.ua/.trash-*/
 .ua/diff-overlay.json
 ```
 

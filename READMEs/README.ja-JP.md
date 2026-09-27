@@ -279,10 +279,12 @@ curl -fsSL https://raw.githubusercontent.com/Egonex-AI/Understand-Anything/main/
 
 > **例：** [GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo) —— コミット済みのグラフを含む Go / Java / Python / Node のリファレンスプロジェクト。
 
-**コミット対象：** `.ua/` 内のすべてのファイル。ただし `intermediate/` と `diff-overlay.json` は除きます（これらはローカルの一時ファイルです）。（レガシープロジェクトは `.understand-anything/` を使用します。そのディレクトリが存在する場合は、以下のディレクトリ名をそれに置き換えてください。）
+**コミット対象：** `.ua/` 内のすべてのファイル。ただし `intermediate/`、`tmp/`、`.trash-*/` と `diff-overlay.json` は除きます（これらはローカルの一時ファイルです）。（レガシープロジェクトは `.understand-anything/` を使用します。そのディレクトリが存在する場合は、以下のディレクトリ名をそれに置き換えてください。）
 
 ```gitignore
 .ua/intermediate/
+.ua/tmp/
+.ua/.trash-*/
 .ua/diff-overlay.json
 ```
 

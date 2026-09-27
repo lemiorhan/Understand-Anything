@@ -266,10 +266,12 @@ El grafo es solo JSON — **confírmalo una vez y tus compañeros se saltan el p
 
 > **Ejemplo:** [GoogleCloudPlatform/microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo) — referencia políglota (Go / Java / Python / Node) con el grafo ya confirmado.
 
-**Qué confirmar:** todo lo que hay en `.ua/` *excepto* `intermediate/` y `diff-overlay.json` (archivos temporales locales). (Los proyectos heredados usan `.understand-anything/`: sustituye ese nombre de directorio abajo si es el que está presente.)
+**Qué confirmar:** todo lo que hay en `.ua/` *excepto* `intermediate/`, `tmp/`, `.trash-*/` y `diff-overlay.json` (archivos temporales locales). (Los proyectos heredados usan `.understand-anything/`: sustituye ese nombre de directorio abajo si es el que está presente.)
 
 ```gitignore
 .ua/intermediate/
+.ua/tmp/
+.ua/.trash-*/
 .ua/diff-overlay.json
 ```
 
